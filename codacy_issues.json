@@ -1,0 +1,102 @@
+{
+  "data": {
+    "counts": {
+      "categories": [
+        { "name": "Compatibility", "total": 2 },
+        { "name": "ErrorProne", "total": 2 },
+        { "name": "Performance", "total": 3 },
+        { "name": "Security", "total": 31 }
+      ],
+      "languages": [
+        { "name": "SQL", "total": 5 },
+        { "name": "Python", "total": 33 }
+      ],
+      "levels": [
+        { "name": "Info", "total": 3 },
+        { "name": "High", "total": 7 },
+        { "name": "Warning", "total": 20 },
+        { "name": "Error", "total": 8 }
+      ],
+      "tags": [
+        { "name": "security", "total": 1 },
+        { "name": "sqlalchemy", "total": 1 },
+        { "name": "ai", "total": 22 },
+        { "name": "dependencies", "total": 22 },
+        { "name": "ai-risk", "total": 22 }
+      ],
+      "patterns": [
+        {
+          "id": "Semgrep_python.lang.security.audit.md5-used-as-password.md5-used-as-password",
+          "title": "Avoid Using MD5 for Password Hashing",
+          "total": 1
+        },
+        {
+          "id": "Semgrep_python_crypto_rule-hash-md5",
+          "title": "Avoid Insecure Hash Algorithms (MD5, MD2, MD4, SHA1)",
+          "total": 1
+        },
+        {
+          "id": "Trivy_vulnerability_high",
+          "title": "Detect Insecure Dependencies (High Severity)",
+          "total": 3
+        },
+        {
+          "id": "Bandit_B608",
+          "title": "Detect Hardcoded SQL Expressions to Prevent SQL Injection",
+          "total": 1
+        },
+        {
+          "id": "Trivy_vulnerability_critical",
+          "title": "Detect Insecure Dependencies (Critical Severity)",
+          "total": 2
+        },
+        {
+          "id": "Trivy_vulnerability_minor",
+          "title": "Detect Insecure Dependencies (Minor Severity)",
+          "total": 3
+        },
+        {
+          "id": "Prospector_pyflakes",
+          "title": "Detect Python Source Code Errors with Pyflakes",
+          "total": 2
+        },
+        {
+          "id": "Semgrep_python_sql_rule-hardcoded-sql-expression",
+          "title": "Avoid Hardcoded SQL Expressions to Prevent SQL Injection",
+          "total": 3
+        },
+        {
+          "id": "Trivy_vulnerability_medium",
+          "title": "Detect Insecure Dependencies (Medium Severity)",
+          "total": 14
+        },
+        {
+          "id": "Semgrep_python.lang.security.insecure-hash-algorithms-md5.insecure-hash-algorithm-md5",
+          "title": "Avoid Insecure MD5 Hash Algorithm",
+          "total": 1
+        },
+        {
+          "id": "TSQLLint_set-quoted-identifier",
+          "title": "Enforce SET QUOTED_IDENTIFIER ON near top of file",
+          "total": 2
+        },
+        {
+          "id": "Semgrep_python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "title": "Avoid SQL String Concatenation in SQLAlchemy Raw Queries",
+          "total": 1
+        },
+        {
+          "id": "TSQLLint_data-compression",
+          "title": "Enforce Data Compression on Tables",
+          "total": 3
+        },
+        {
+          "id": "Semgrep_python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "title": "Avoid Formatted SQL Queries",
+          "total": 1
+        }
+      ],
+      "authors": [{ "name": "anxolerd@outlook.com", "total": 38 }]
+    }
+  }
+}

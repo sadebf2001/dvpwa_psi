@@ -1,0 +1,832 @@
+{
+  "data": [
+    {
+      "issueId": "30da09864653b5fea73204f3c71340b9",
+      "resultDataId": 131411106015,
+      "filePath": "sqli/dao/course.py",
+      "fileId": 178128225733,
+      "patternInfo": {
+        "id": "Semgrep_python_sql_rule-hardcoded-sql-expression",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 37,
+      "message": "SQL Injection is a critical vulnerability that can lead to data or system compromise.",
+      "language": "Python",
+      "lineText": "            await cur.execute(q, **params)",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "55fb92df7f1d1f216c6edc3fd74f571a",
+      "resultDataId": 131411105937,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2024-23829: python-aiohttp: http request smuggling) (update to 3.9.2)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "4f4eed9c8785ee81e7954026a6cbd0e3",
+      "resultDataId": 131411105940,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2024-27306: aiohttp: XSS on index pages for static file handling) (update to 3.9.4)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "d81927a3a5021e4da9bf03d97f798a63",
+      "resultDataId": 131411106017,
+      "filePath": "sqli/dao/student.py",
+      "fileId": 178128225756,
+      "patternInfo": {
+        "id": "Semgrep_python_sql_rule-hardcoded-sql-expression",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 45,
+      "message": "SQL Injection is a critical vulnerability that can lead to data or system compromise.",
+      "language": "Python",
+      "lineText": "            await cur.execute(q)",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "51311bdee70060bb550dfd545f0b282f",
+      "resultDataId": 131411105947,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2023-49081: aiohttp: HTTP request modification) (update to 3.9.0)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "ff3a9a26240bcd6d2d356b2ddbdb5f20",
+      "resultDataId": 131411106012,
+      "filePath": "sqli/dao/user.py",
+      "fileId": 178128225740,
+      "patternInfo": {
+        "id": "Semgrep_python_crypto_rule-hash-md5",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "Cryptography"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 41,
+      "message": "The application was found using an insecure or risky digest or signature algorithm.",
+      "language": "Python",
+      "lineText": "        return self.pwd_hash == md5(password.encode('utf-8')).hexdigest()",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "4f8b40a8c9647f650984b1a4b50197fb",
+      "resultDataId": 131411105934,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2023-49082: aiohttp: CRLF injection if user controls the HTTP method using aiohttp client) (update to 3.9.0)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "f8002442d67c2d634d1d1ba8f541386e",
+      "resultDataId": 131411105936,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_critical",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 15,
+      "message": "Insecure dependency pypi/pyyaml@3.13 (CVE-2020-14343: PyYAML: incomplete fix for CVE-2020-1747) (update to 5.4)",
+      "language": "Python",
+      "lineText": "pyyaml==3.13",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "16e47ed52cd76e77173f459e8ae594ff",
+      "resultDataId": 131411105949,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 11,
+      "message": "Insecure dependency pypi/jinja2@2.10 (CVE-2024-22195: jinja2: HTML attribute injection when passing user input as keys to xmlattr filter) (update to 3.1.3)",
+      "language": "Python",
+      "lineText": "jinja2==2.10              # via aiohttp-jinja2",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "c05aba1b5bdad381e08cb57fc34053ed",
+      "resultDataId": 131411105950,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2024-52304: aiohttp: aiohttp vulnerable to request smuggling due to incorrect parsing of chunk extensions) (update to 3.10.11)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "ad680fcf99991022eaa6499ba300bffd",
+      "resultDataId": 131411106893,
+      "filePath": "migrations/000-init-schema.sql",
+      "fileId": 178128225763,
+      "patternInfo": {
+        "id": "TSQLLint_data-compression",
+        "category": "Performance",
+        "level": "Warning",
+        "severityLevel": "Warning"
+      },
+      "toolInfo": {
+        "uuid": "35cf97c2-6548-483e-baf9-549433891295",
+        "name": "TSQLLint"
+      },
+      "lineNumber": 19,
+      "message": "Expected table to use data compression",
+      "language": "SQL",
+      "lineText": "CREATE TABLE courses (",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "47d7ea59cb28281358c6ca2b2aac022b22385d76",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2017-07-28T14:22:30Z"
+      }
+    },
+    {
+      "issueId": "fb111ba300ce4e4d12659eb6b966c6b6",
+      "resultDataId": 131411106891,
+      "filePath": "migrations/000-init-schema.sql",
+      "fileId": 178128225763,
+      "patternInfo": {
+        "id": "TSQLLint_set-quoted-identifier",
+        "category": "Compatibility",
+        "level": "Warning",
+        "severityLevel": "Warning"
+      },
+      "toolInfo": {
+        "uuid": "35cf97c2-6548-483e-baf9-549433891295",
+        "name": "TSQLLint"
+      },
+      "lineNumber": 1,
+      "message": "Expected SET QUOTED_IDENTIFIER ON near top of file",
+      "language": "SQL",
+      "lineText": "CREATE TABLE users (",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "47d7ea59cb28281358c6ca2b2aac022b22385d76",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2017-07-28T14:22:30Z"
+      }
+    },
+    {
+      "issueId": "a5649f14fa49311798f7d69512400dec",
+      "resultDataId": 131411106892,
+      "filePath": "migrations/001-fixtures.sql",
+      "fileId": 178128225778,
+      "patternInfo": {
+        "id": "TSQLLint_set-quoted-identifier",
+        "category": "Compatibility",
+        "level": "Warning",
+        "severityLevel": "Warning"
+      },
+      "toolInfo": {
+        "uuid": "35cf97c2-6548-483e-baf9-549433891295",
+        "name": "TSQLLint"
+      },
+      "lineNumber": 1,
+      "message": "Expected SET QUOTED_IDENTIFIER ON near top of file",
+      "language": "SQL",
+      "lineText": "INSERT INTO users (",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "47d7ea59cb28281358c6ca2b2aac022b22385d76",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2017-07-28T14:22:30Z"
+      }
+    },
+    {
+      "issueId": "3c3606f6b1fe7c3bc836fdb49d7bba4d",
+      "resultDataId": 131411105939,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_critical",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 15,
+      "message": "Insecure dependency pypi/pyyaml@3.13 (CVE-2017-18342: PyYAML: yaml.load() API could execute arbitrary code) (update to 4.1)",
+      "language": "Python",
+      "lineText": "pyyaml==3.13",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "bd135b825a83ca64c6c99c9c14666fae",
+      "resultDataId": 131411105948,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_minor",
+        "category": "Security",
+        "level": "Info",
+        "severityLevel": "Info",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2025-53643: aiohttp: AIOHTTP HTTP Request/Response Smuggling) (update to 3.12.14)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "ad1557b5d3f7b4e72d0d55e8c3c1375e",
+      "resultDataId": 131411105938,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 11,
+      "message": "Insecure dependency pypi/jinja2@2.10 (CVE-2020-28493: python-jinja2: ReDoS vulnerability in the urlize filter) (update to 2.11.3)",
+      "language": "Python",
+      "lineText": "jinja2==2.10              # via aiohttp-jinja2",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "99326be663c47e296886a5cb6f0fc863",
+      "resultDataId": 131411105944,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 10,
+      "message": "Insecure dependency pypi/idna@2.8 (CVE-2024-3651: python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode()) (update to 3.7)",
+      "language": "Python",
+      "lineText": "idna==2.8                 # via yarl",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "b3808b1003841eee0fddee8647dfc0f6",
+      "resultDataId": 131411106016,
+      "filePath": "sqli/dao/student.py",
+      "fileId": 178128225756,
+      "patternInfo": {
+        "id": "Semgrep_python_sql_rule-hardcoded-sql-expression",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 36,
+      "message": "SQL Injection is a critical vulnerability that can lead to data or system compromise.",
+      "language": "Python",
+      "lineText": "            await cur.execute(q, params)",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "844966c0e950544434c01db40c159d73",
+      "resultDataId": 131411105951,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2023-47627: python-aiohttp: numerous issues in HTTP parser with header parsing) (update to 3.8.6)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "d3f4167de288ede948f6b1dce8bbdc62",
+      "resultDataId": 131411105941,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_minor",
+        "category": "Security",
+        "level": "Info",
+        "severityLevel": "Info",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2023-47641: python-aiohttp: inconsistent interpretation of `Content-Length` vs. `Transfer-Encoding`) (update to 3.8.0)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "70a6d2c377c4db2818a66ac0fc159a30",
+      "resultDataId": 131411105952,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 11,
+      "message": "Insecure dependency pypi/jinja2@2.10 (CVE-2024-56326: jinja2: Jinja has a sandbox breakout through indirect reference to format method) (update to 3.1.5)",
+      "language": "Python",
+      "lineText": "jinja2==2.10              # via aiohttp-jinja2",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "fb465c10aaa4de0e74119d2b471fe2fb",
+      "resultDataId": 131411106890,
+      "filePath": "migrations/000-init-schema.sql",
+      "fileId": 178128225763,
+      "patternInfo": {
+        "id": "TSQLLint_data-compression",
+        "category": "Performance",
+        "level": "Warning",
+        "severityLevel": "Warning"
+      },
+      "toolInfo": {
+        "uuid": "35cf97c2-6548-483e-baf9-549433891295",
+        "name": "TSQLLint"
+      },
+      "lineNumber": 12,
+      "message": "Expected table to use data compression",
+      "language": "SQL",
+      "lineText": "CREATE TABLE students (",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "47d7ea59cb28281358c6ca2b2aac022b22385d76",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2017-07-28T14:22:30Z"
+      }
+    },
+    {
+      "issueId": "f3c0023fa0f0054016a0e9f2fcf592bc",
+      "resultDataId": 131411106005,
+      "filePath": "sqli/dao/student.py",
+      "fileId": 178128225756,
+      "patternInfo": {
+        "id": "Bandit_B608",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "89b6fc6a-9137-4cf3-8b9f-dcc3bedfa738",
+        "name": "Bandit"
+      },
+      "lineNumber": 42,
+      "message": "Possible SQL injection vector through string-based query construction.",
+      "language": "Python",
+      "lineText": "        q = (\"INSERT INTO students (name) \"",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "44f8ca8a7437ca0db535b7eaff1156be",
+      "resultDataId": 131411105942,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_minor",
+        "category": "Security",
+        "level": "Info",
+        "severityLevel": "Info",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2021-21330: python-aiohttp: Open redirect in aiohttp.web_middlewares.normalize_path_middleware) (update to 3.7.4)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "fa841ada6ceb31d3a1d34e6f184aa0e5",
+      "resultDataId": 131411105953,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (GHSA-pjjw-qhg8-p2p9: aiohttp has vulnerable dependency that is vulnerable to request smuggling) (update to 3.8.6)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "d0c915c769b3fa1d17ec78eec1d79a2e",
+      "resultDataId": 131411105932,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 3,
+      "message": "Insecure dependency pypi/aiohttp@3.5.3 (CVE-2023-37276: python-aiohttp: HTTP request smuggling via llhttp HTTP request parser) (update to 3.8.5)",
+      "language": "Python",
+      "lineText": "aiohttp==3.5.3",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "aab67e180793f22be776095c989b051d",
+      "resultDataId": 131411105935,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 11,
+      "message": "Insecure dependency pypi/jinja2@2.10 (CVE-2025-27516: jinja2: Jinja sandbox breakout through attr filter selecting format method) (update to 3.1.6)",
+      "language": "Python",
+      "lineText": "jinja2==2.10              # via aiohttp-jinja2",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    },
+    {
+      "issueId": "5c499717c38b29e9d9213ded20568d6e",
+      "resultDataId": 131411106894,
+      "filePath": "migrations/000-init-schema.sql",
+      "fileId": 178128225763,
+      "patternInfo": {
+        "id": "TSQLLint_data-compression",
+        "category": "Performance",
+        "level": "Warning",
+        "severityLevel": "Warning"
+      },
+      "toolInfo": {
+        "uuid": "35cf97c2-6548-483e-baf9-549433891295",
+        "name": "TSQLLint"
+      },
+      "lineNumber": 1,
+      "message": "Expected table to use data compression",
+      "language": "SQL",
+      "lineText": "CREATE TABLE users (",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "47d7ea59cb28281358c6ca2b2aac022b22385d76",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2017-07-28T14:22:30Z"
+      }
+    },
+    {
+      "issueId": "be0b705665fcaa5b66b8989a8934f4f4",
+      "resultDataId": 131411106019,
+      "filePath": "sqli/dao/student.py",
+      "fileId": 178128225756,
+      "patternInfo": {
+        "id": "Semgrep_python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 45,
+      "message": "Detected possible formatted SQL query.",
+      "language": "Python",
+      "lineText": "            await cur.execute(q)",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "82e3ec45759357c4fcc5be7a402e7f2d",
+      "resultDataId": 131411106013,
+      "filePath": "sqli/dao/student.py",
+      "fileId": 178128225756,
+      "patternInfo": {
+        "id": "Semgrep_python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "category": "Security",
+        "level": "Error",
+        "severityLevel": "Error",
+        "subCategory": "SQLInjection"
+      },
+      "toolInfo": {
+        "uuid": "6792c561-236d-41b7-ba5e-9d6bee0d548b",
+        "name": "Semgrep"
+      },
+      "lineNumber": 45,
+      "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection.",
+      "language": "Python",
+      "lineText": "            await cur.execute(q)",
+      "falsePositiveThreshold": 80
+    },
+    {
+      "issueId": "2bf093db7093e1889a0fa4b91a011ca7",
+      "resultDataId": 131411105933,
+      "filePath": "requirements.txt",
+      "fileId": 178128225771,
+      "patternInfo": {
+        "id": "Trivy_vulnerability_medium",
+        "category": "Security",
+        "level": "Warning",
+        "severityLevel": "Warning",
+        "subCategory": "InsecureModulesLibraries"
+      },
+      "toolInfo": {
+        "uuid": "2fd7fbe0-33f9-4ab3-ab73-e9b62404e2cb",
+        "name": "Trivy"
+      },
+      "lineNumber": 11,
+      "message": "Insecure dependency pypi/jinja2@2.10 (CVE-2024-34064: jinja2: accepts keys containing non-attribute characters) (update to 3.1.4)",
+      "language": "Python",
+      "lineText": "jinja2==2.10              # via aiohttp-jinja2",
+      "falsePositiveThreshold": 80,
+      "commitInfo": {
+        "sha": "a1d8f89fac2e57093189853c6527c2b01fc1d9c1",
+        "commiter": "anxolerd@outlook.com",
+        "commiterName": "Oleksandr Kovalchuk",
+        "timestamp": "2022-11-04T11:57:00Z"
+      }
+    }
+  ],
+  "pagination": { "limit": 100, "total": 31 }
+}
