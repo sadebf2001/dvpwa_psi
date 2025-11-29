@@ -2,6 +2,7 @@ from hashlib import md5
 from typing import NamedTuple, Optional
 
 from aiopg import Connection
+from argon2 import PasswordHasher
 
 
 class User(NamedTuple):
@@ -37,5 +38,10 @@ class User(NamedTuple):
             )
             return User.from_raw(await cur.fetchone())
 
+    ph = PasswordHasher()
     def check_password(self, password: str):
-        return self.pwd_hash == md5(password.encode('utf-8')).hexdigest()
+        try:
+            ph.verify(self.pwd_hash, password)
+            return True
+        except Exception:
+            return False
