@@ -1,5 +1,4 @@
-from typing import Optional, NamedTuple
-import sqlite3
+from typing import NamedTuple, Optional
 
 from aiopg.connection import Connection
 
@@ -17,34 +16,33 @@ class Course(NamedTuple):
     async def get(conn: Connection, id_: int):
         async with conn.cursor() as cur:
             await cur.execute(
-                'SELECT id, title, description '
-                'FROM courses WHERE id = %s',
+                "SELECT id, title, description FROM courses WHERE id = %s",
                 (id_,),
             )
             return Course.from_raw(await cur.fetchone())
 
     @staticmethod
-    async def get_many(conn: Connection, limit: Optional[int] = None,
-                       offset: Optional[int] = None):
-        q = 'SELECT id, title, description FROM courses'
+    async def get_many(
+        conn: Connection, limit: Optional[int] = None, offset: Optional[int] = None
+    ):
+        q = "SELECT id, title, description FROM courses"
         params = {}
         if limit is not None:
-            q += ' LIMIT + %(limit)s '
-            params['limit'] = limit
+            q += " LIMIT %(limit)s"
+            params["limit"] = limit
         if offset is not None:
-            q += ' OFFSET + %(offset)s '
-            params['offset'] = offset
+            q += " OFFSET %(offset)s"
+            params["offset"] = offset
         async with conn.cursor() as cur:
-            params = ('user_input',)
-            await cur.execute("select name from sqlite_master where name = ?", params)
+            await cur.execute(q, params)
             result = await cur.fetchall()
             return [Course.from_raw(r) for r in result]
 
     @staticmethod
-    async def create(conn: Connection, title: str,
-                     description: Optional[str] = None):
-        q = ('INSERT INTO courses (title, description) '
-             'VALUES (%(title)s, %(description)s)')
+    async def create(conn: Connection, title: str, description: Optional[str] = None):
+        q = (
+            "INSERT INTO courses (title, description) "
+            "VALUES (%(title)s, %(description)s)"
+        )
         async with conn.cursor() as cur:
-            await cur.execute(q, {'title': title,
-                                  'description': description})
+            await cur.execute(q, {"title": title, "description": description})
