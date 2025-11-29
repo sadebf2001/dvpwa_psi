@@ -1,4 +1,5 @@
 from typing import Optional, NamedTuple
+import sqlite3
 
 from aiopg.connection import Connection
 
@@ -34,7 +35,8 @@ class Course(NamedTuple):
             q += ' OFFSET + %(offset)s '
             params['offset'] = offset
         async with conn.cursor() as cur:
-            await cur.execute(q, **params)
+            params = ('user_input',)
+            await cur.execute("select name from sqlite_master where name = ?", params)
             result = await cur.fetchall()
             return [Course.from_raw(r) for r in result]
 
